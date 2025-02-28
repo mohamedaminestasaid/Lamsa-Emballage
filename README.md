@@ -1,3 +1,1 @@
-# Lamsa-Emballage
-Lamsa-Emballage
-create application full stack
+# Lamsa-Emballage full stack
