@@ -17,13 +17,9 @@ import orderRouter from './route/order.route.js'
 
 const app = express()
 app.use(cors({
-    origin: 'https://www.lamsaemballage.com/', // Allow only this origin
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
-    credentials: true // Allow cookies and credentials
-  }));
-
-   
-  
+    credentials : true,
+    origin : process.env.FRONTEND_URL
+}))
 app.use(express.json())
 app.use(cookieParser())
 app.use(morgan())
