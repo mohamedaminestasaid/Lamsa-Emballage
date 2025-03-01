@@ -3,18 +3,15 @@
   "name": "Lamsa",
   "builds": [
     {
-      "src": "server/index.js",
+      "src": "./index.js",
       "use": "@vercel/node"
-    },
-    {
-      "src": "client/dist/**",
-      "use": "@vercel/static"
     }
+    
   ],
   "routes": [
     {
          "src": "/(.*)",
-      "dest": "server/index.js"
+      "dest": "/"
     }
   ]
 }
